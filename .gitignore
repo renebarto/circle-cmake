@@ -93,3 +93,11 @@ tmp/
 # Other
 # ----------------------------------------------
 /circle.geany
+
+# Visual Studio / CMake
+cmake-*/
+deploy/
+output/
+out/
+.vs/*
+!.vs/launch.vs.json

@@ -1,0 +1,70 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+    "configurations": [
+        {
+            "type": "cppgdb",
+            "project": "CMakeLists.txt",
+            "projectTarget": "01-gpiosimple.elf (D:\\Projects\\Private\\RaspberryPi\\circle\\output\\Debug\\bin\\01-gpiosimple.elf)",
+            "name": "01-gpiosimple.elf (D:\\Projects\\Private\\RaspberryPi\\circle\\output\\Debug\\bin\\01-gpiosimple.elf)",
+            "program": "01-gpiosimple.elf",
+            "request": "launch",
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}\\output\\Debug\\bin",
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "targetArchitecture": "arm64",
+            "miDebuggerServerAddress": "localhost:1234",
+            "miDebuggerPath": "F:\\toolchains\\arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-aarch64-none-elf\\bin\\aarch64-none-elf-gdb.exe",
+            "args": []
+        },
+        {
+            "type": "cppgdb",
+            "project": "CMakeLists.txt",
+            "projectTarget": "02-screenpixel.elf (D:\\Projects\\Private\\RaspberryPi\\circle\\output\\Debug\\bin\\02-screenpixel.elf)",
+            "name": "02-screenpixel.elf (D:\\Projects\\Private\\RaspberryPi\\circle\\output\\Debug\\bin\\02-screenpixel.elf)",
+            "program": "02-screenpixel.elf",
+            "request": "launch",
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}\\output\\Debug\\bin",
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "targetArchitecture": "arm64",
+            "miDebuggerServerAddress": "localhost:1234",
+            "miDebuggerPath": "F:\\toolchains\\arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-aarch64-none-elf\\bin\\aarch64-none-elf-gdb.exe",
+            "args": []
+        },
+        {
+            "type": "cppgdb",
+            "project": "CMakeLists.txt",
+            "projectTarget": "03-screentext.elf (D:\\Projects\\Private\\RaspberryPi\\circle\\output\\Debug\\bin\\03-screentext.elf)",
+            "name": "03-screentext.elf (D:\\Projects\\Private\\RaspberryPi\\circle\\output\\Debug\\bin\\03-screentext.elf)",
+            "program": "03-screentext.elf",
+            "request": "launch",
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}\\output\\Debug\\bin",
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "targetArchitecture": "arm64",
+            "miDebuggerServerAddress": "localhost:1234",
+            "miDebuggerPath": "F:\\toolchains\\arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-aarch64-none-elf\\bin\\aarch64-none-elf-gdb.exe",
+            "args": []
+        },
+        {
+            "type": "cppgdb",
+            "project": "CMakeLists.txt",
+            "projectTarget": "04-timer.elf (D:\\Projects\\Private\\RaspberryPi\\circle\\output\\Debug\\bin\\04-timer.elf)",
+            "name": "04-timer.elf (D:\\Projects\\Private\\RaspberryPi\\circle\\output\\Debug\\bin\\04-timer.elf)",
+            "program": "04-timer.elf",
+            "request": "launch",
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}\\output\\Debug\\bin",
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "targetArchitecture": "arm64",
+            "miDebuggerServerAddress": "localhost:1234",
+            "miDebuggerPath": "F:\\toolchains\\arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-aarch64-none-elf\\bin\\aarch64-none-elf-gdb.exe",
+            "args": []
+        }
+    ]
+}
