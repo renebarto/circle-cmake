@@ -35,8 +35,15 @@ set(PROJECT_SOURCES
 
 set(PROJECT_INCLUDES_PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/kernel.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/sound.h
     )
 set(PROJECT_INCLUDES_PRIVATE )
+
+add_custom_command(
+    OUTPUT ${CMAKE_CURRENT_SOURCE_DIR}/sound.h
+    COMMAND ${7Zip} e -y ${CMAKE_CURRENT_SOURCE_DIR}/sound.h.gz
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+)
 
 if (CMAKE_VERBOSE_MAKEFILE)
     display_list("Package                           : " ${PROJECT_NAME} )

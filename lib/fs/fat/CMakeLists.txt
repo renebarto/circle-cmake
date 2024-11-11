@@ -1,8 +1,8 @@
 message(STATUS "\n**********************************************************************************\n")
 message(STATUS "\n## In directory: ${CMAKE_CURRENT_SOURCE_DIR}")
 
-project(fatfs
-    DESCRIPTION "Circle fatfs library"
+project(fat
+    DESCRIPTION "Circle fat library"
     LANGUAGES CXX ASM)
 
 set(PROJECT_TARGET_NAME ${PROJECT_NAME})

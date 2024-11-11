@@ -1,7 +1,7 @@
 message(STATUS "\n**********************************************************************************\n")
 message(STATUS "\n## In directory: ${CMAKE_CURRENT_SOURCE_DIR}")
 
-project(04-timer
+project(36-softpwm
     DESCRIPTION "04-timer sample"
     LANGUAGES CXX ASM)
 
@@ -29,22 +29,12 @@ set(PROJECT_LIBS
 set(PROJECT_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/kernel.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/softpwmoutput.cpp
     )
 
 set(PROJECT_INCLUDES_PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/kernel.h
-    ${CMAKE_SOURCE_DIR}/include/circle/actled.h
-    ${CMAKE_SOURCE_DIR}/include/circle/devicenameservice.h
-    ${CMAKE_SOURCE_DIR}/include/circle/exceptionhandler.h
-    ${CMAKE_SOURCE_DIR}/include/circle/gpiopin.h
-    ${CMAKE_SOURCE_DIR}/include/circle/interrupt.h
-    ${CMAKE_SOURCE_DIR}/include/circle/koptions.h
-    ${CMAKE_SOURCE_DIR}/include/circle/logger.h
-    ${CMAKE_SOURCE_DIR}/include/circle/screen.h
-    ${CMAKE_SOURCE_DIR}/include/circle/serial.h
-    ${CMAKE_SOURCE_DIR}/include/circle/startup.h
-    ${CMAKE_SOURCE_DIR}/include/circle/timer.h
-    ${CMAKE_SOURCE_DIR}/include/circle/types.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/softpwmoutput.h
     )
 set(PROJECT_INCLUDES_PRIVATE )
 

@@ -1,8 +1,8 @@
 message(STATUS "\n**********************************************************************************\n")
 message(STATUS "\n## In directory: ${CMAKE_CURRENT_SOURCE_DIR}")
 
-project(04-timer
-    DESCRIPTION "04-timer sample"
+project(29-miniorgan
+    DESCRIPTION "29-miniorgan sample"
     LANGUAGES CXX ASM)
 
 set(PROJECT_TARGET_NAME ${PROJECT_NAME}.elf)
@@ -19,7 +19,10 @@ set(PROJECT_INCLUDE_DIRS_PUBLIC ${CMAKE_SOURCE_DIR}/include)
 set(PROJECT_LINK_OPTIONS ${LINKER_OPTIONS})
 
 set(PROJECT_DEPENDENCIES
-    circle)
+    circle
+    sound
+    usb
+    )
 
 set(PROJECT_LIBS
     ${LINKER_LIBRARIES}
@@ -29,22 +32,12 @@ set(PROJECT_LIBS
 set(PROJECT_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/kernel.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/miniorgan.cpp
     )
 
 set(PROJECT_INCLUDES_PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/kernel.h
-    ${CMAKE_SOURCE_DIR}/include/circle/actled.h
-    ${CMAKE_SOURCE_DIR}/include/circle/devicenameservice.h
-    ${CMAKE_SOURCE_DIR}/include/circle/exceptionhandler.h
-    ${CMAKE_SOURCE_DIR}/include/circle/gpiopin.h
-    ${CMAKE_SOURCE_DIR}/include/circle/interrupt.h
-    ${CMAKE_SOURCE_DIR}/include/circle/koptions.h
-    ${CMAKE_SOURCE_DIR}/include/circle/logger.h
-    ${CMAKE_SOURCE_DIR}/include/circle/screen.h
-    ${CMAKE_SOURCE_DIR}/include/circle/serial.h
-    ${CMAKE_SOURCE_DIR}/include/circle/startup.h
-    ${CMAKE_SOURCE_DIR}/include/circle/timer.h
-    ${CMAKE_SOURCE_DIR}/include/circle/types.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/miniorgan.h
     )
 set(PROJECT_INCLUDES_PRIVATE )
 
